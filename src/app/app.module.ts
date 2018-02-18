@@ -1,18 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
 import { AppComponent } from './app.component';
+import { CityComponent } from './city/city.component';
+import { CitiesComponent } from './cities/cities.component';
 
+import { CityService } from './city.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CityComponent,
+    CitiesComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    CityService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
