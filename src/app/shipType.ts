@@ -2,11 +2,11 @@ export class ShipType {
   name: string;
   health: number;
   store: number:
-  guns: number;
-  men: number;
+  cannons: number;
+  sailors: number;
   price: number;
-  depth: number;
-  maintenance: number;
+  draft: number;
+  dailyCost: number;
   knots: number;
   agility: number;
 }
