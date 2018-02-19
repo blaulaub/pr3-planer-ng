@@ -1,3 +1,10 @@
-<p>
-  new-city works!
-</p>
+<h2>Create New City</h2>
+<div>
+  <label>name:
+    <input [(ngModel)]="city.name" placeholder="name">
+  </label>
+  <label>population:
+    <input type="number" [(ngModel)]="city.population" placeholder="population">
+  </label>
+  <button (click)="addCity()">Add</button>
+</div>
