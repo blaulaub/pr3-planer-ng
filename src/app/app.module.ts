@@ -12,6 +12,7 @@ import { NewGameComponent } from './new-game/new-game.component';
 
 import { CityService } from './city.service';
 import { GameService } from './game.service';
+import { GameComponent } from './game/game.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { GameService } from './game.service';
     CityComponent,
     CitiesComponent,
     GamesComponent,
-    NewGameComponent
+    NewGameComponent,
+    GameComponent
   ],
   imports: [
     BrowserModule,

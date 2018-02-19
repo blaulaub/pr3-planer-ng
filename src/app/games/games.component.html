@@ -2,7 +2,9 @@
 <div *ngIf="games">
   <ul>
     <li *ngFor="let game of games">
-      {{game.name}}
+      <a routerLink="/game/{{ game.id }}">
+        {{game.name}}
+      </a>
     </li>
   </ul>
 </div>

@@ -20,4 +20,8 @@ export class GameService {
     game.id = Math.floor(Math.random() * 32000) + 1;
     GAMES.push(game);
   }
+
+  getGame(id: number): Observable<Game> {
+    return of(GAMES.find(game => game.id == id));
+  }
 }
