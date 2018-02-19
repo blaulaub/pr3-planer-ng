@@ -7,19 +7,23 @@ import { CitiesComponent } from './cities/cities.component';
 
 import { CityService } from './city.service';
 import { AppRoutingModule } from './/app-routing.module';
+import { GamesComponent } from './games/games.component';
+import { GameService } from './game.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     CityComponent,
-    CitiesComponent
+    CitiesComponent,
+    GamesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [
-    CityService
+    CityService,
+    GameService
   ],
   bootstrap: [AppComponent]
 })
