@@ -16,6 +16,8 @@ export class GameService {
   }
 
   addGame(game: Game) {
+    // TODO actually game has to persisted via server and id generated there
+    game.id = Math.floor(Math.random() * 32000) + 1;
     GAMES.push(game);
   }
 }

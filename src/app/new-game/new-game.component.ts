@@ -20,7 +20,7 @@ export class NewGameComponent implements OnInit {
 
   resetGame(): Game {
     var previous: Game = this.game;
-    this.game = { name: "" };
+    this.game = { id: null, name: "" };
     return previous;
   }
 
