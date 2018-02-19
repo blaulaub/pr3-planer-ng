@@ -14,4 +14,8 @@ export class CityService {
   getCities(gameId: number): Observable<City[]> {
     return of(CITIES);
   }
+
+  getCity(gameId: number, cityId: number): Observable<City> {
+    return of(CITIES.find(city => city.id == cityId));
+  }
 }

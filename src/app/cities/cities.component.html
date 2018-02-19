@@ -2,7 +2,9 @@
 <div *ngIf="cities">
   <ul>
     <li *ngFor="let city of cities">
-      {{city.name}}
+      <a routerLink="../city/{{ city.id }}">
+        {{city.name}}
+      </a>
     </li>
   </ul>
   <i>Todo: add link to single city?</i>
