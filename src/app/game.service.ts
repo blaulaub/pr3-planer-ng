@@ -14,4 +14,8 @@ export class GameService {
   getGames(): Observable<Game[]> {
     return of(GAMES);
   }
+
+  addGame(game: Game) {
+    GAMES.push(game);
+  }
 }

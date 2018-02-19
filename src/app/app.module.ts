@@ -1,13 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
+import { AppRoutingModule } from './/app-routing.module';
 
 import { AppComponent } from './app.component';
 import { CityComponent } from './city/city.component';
 import { CitiesComponent } from './cities/cities.component';
+import { GamesComponent } from './games/games.component';
+import { NewGameComponent } from './new-game/new-game.component';
 
 import { CityService } from './city.service';
-import { AppRoutingModule } from './/app-routing.module';
-import { GamesComponent } from './games/games.component';
 import { GameService } from './game.service';
 
 @NgModule({
@@ -15,10 +18,12 @@ import { GameService } from './game.service';
     AppComponent,
     CityComponent,
     CitiesComponent,
-    GamesComponent
+    GamesComponent,
+    NewGameComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [
