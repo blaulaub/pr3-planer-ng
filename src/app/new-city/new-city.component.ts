@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { City } from '../city';
-import { CityService } from '../city.service';
+import { CityService } from '../services/city.service';
 
 @Component({
   selector: 'app-new-city',

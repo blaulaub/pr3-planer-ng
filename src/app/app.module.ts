@@ -9,11 +9,12 @@ import { CityComponent } from './city/city.component';
 import { CitiesComponent } from './cities/cities.component';
 import { GamesComponent } from './games/games.component';
 import { NewGameComponent } from './new-game/new-game.component';
-
-import { CityService } from './city.service';
-import { GameService } from './game.service';
 import { GameComponent } from './game/game.component';
 import { NewCityComponent } from './new-city/new-city.component';
+
+import { GoodService } from './services/good.service';
+import { CityService } from './services/city.service';
+import { GameService } from './services/game.service';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { NewCityComponent } from './new-city/new-city.component';
     AppRoutingModule
   ],
   providers: [
+    GoodService,
     CityService,
     GameService
   ],
