@@ -6,6 +6,7 @@ import { CityComponent } from './city/city.component';
 import { CitiesComponent } from './cities/cities.component';
 
 import { CityService } from './city.service';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CityService } from './city.service';
     CitiesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [
     CityService
