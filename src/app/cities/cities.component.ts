@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
 import { City } from '../city';
 import { CityService } from '../city.service';
@@ -10,11 +12,18 @@ import { CityService } from '../city.service';
 })
 export class CitiesComponent implements OnInit {
 
+  gameId: number;
+
   cities: City[];
 
-  constructor(private cityService: CityService) { }
+  constructor(
+    private route: ActivatedRoute,
+    private location: Location,
+    private cityService: CityService
+  ) { }
 
   ngOnInit() {
-    this.cityService.getCities().subscribe(cities => this.cities = cities);
+    this.gameId = +this.route.snapshot.paramMap.get('gameId');
+    this.cityService.getCities(this.gameId).subscribe(cities => this.cities = cities);
   }
 }

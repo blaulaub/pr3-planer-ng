@@ -11,7 +11,7 @@ export class CityService {
 
   constructor() { }
 
-  getCities(): Observable<City[]> {
+  getCities(gameId: number): Observable<City[]> {
     return of(CITIES);
   }
 }
