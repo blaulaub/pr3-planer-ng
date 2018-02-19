@@ -11,11 +11,13 @@ import { GamesComponent } from './games/games.component';
 import { NewGameComponent } from './new-game/new-game.component';
 import { GameComponent } from './game/game.component';
 import { NewCityComponent } from './new-city/new-city.component';
+import { GoodsComponent } from './goods/goods.component';
+import { ShipTypesComponent } from './ship-types/ship-types.component';
 
 import { GoodService } from './services/good.service';
 import { CityService } from './services/city.service';
 import { GameService } from './services/game.service';
-import { GoodsComponent } from './goods/goods.component';
+import { ShipTypeService } from './services/ship-type.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { GoodsComponent } from './goods/goods.component';
     NewGameComponent,
     GameComponent,
     NewCityComponent,
-    GoodsComponent
+    GoodsComponent,
+    ShipTypesComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,8 @@ import { GoodsComponent } from './goods/goods.component';
   providers: [
     GoodService,
     CityService,
-    GameService
+    GameService,
+    ShipTypeService
   ],
   bootstrap: [AppComponent]
 })

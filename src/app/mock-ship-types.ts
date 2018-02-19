@@ -1,4 +1,4 @@
-import { ShipType } from './shipType';
+import { ShipType } from './ship-type';
 
 export const SHIP_TYPES: ShipType[] = [
   { name: "Linienschiff"   , health: 340, store: 400, cannons: 50, sailors: 250, price: 200000, draft: 2, dailyCost: 340, knots: 14, agility:  70 },

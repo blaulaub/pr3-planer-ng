@@ -1,0 +1,28 @@
+<h2>Ship Types</h2>
+<i>Todo: a static table is probably not state-of-the-art?</i>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>health</th>
+    <th>store</th>
+    <th>cannons</th>
+    <th>sailors</th>
+    <th>price</th>
+    <th>draft</th>
+    <th>dailyCost</th>
+    <th>knots</th>
+    <th>agility</th>
+  </tr>
+  <tr *ngFor="let shipType of shipTypes">
+    <td>{{ shipType.name }}</td>
+    <td>{{ shipType.health }}</td>
+    <td>{{ shipType.store }}</td>
+    <td>{{ shipType.cannons }}</td>
+    <td>{{ shipType.sailors }}</td>
+    <td>{{ shipType.price }}</td>
+    <td>{{ shipType.draft }}</td>
+    <td>{{ shipType.dailyCost }}</td>
+    <td>{{ shipType.knots }}</td>
+    <td>{{ shipType.agility }}</td>
+  </tr>
+</table>

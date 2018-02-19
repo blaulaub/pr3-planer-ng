@@ -6,6 +6,7 @@ import { GameComponent } from './game/game.component';
 import { CitiesComponent } from './cities/cities.component';
 import { CityComponent } from './city/city.component';
 import { GoodsComponent } from './goods/goods.component';
+import { ShipTypesComponent } from './ship-types/ship-types.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/games', pathMatch: 'full' },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'game/:gameId', component: GameComponent },
   { path: 'game/:gameId/cities', component: CitiesComponent },
   { path: 'game/:gameId/city/:cityId', component: CityComponent },
-  { path: 'goods', component: GoodsComponent }
+  { path: 'goods', component: GoodsComponent },
+  { path: 'shipTypes', component: ShipTypesComponent }
 ];
 
 @NgModule({
