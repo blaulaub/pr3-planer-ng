@@ -15,6 +15,12 @@ export class CityService {
     return of(CITIES);
   }
 
+  addCity(city: City) {
+    // TODO actually city has to persisted via server and id generated there
+    city.id = Math.floor(Math.random() * 32000) + 1;
+    CITIES.push(city);
+  }
+
   getCity(gameId: number, cityId: number): Observable<City> {
     return of(CITIES.find(city => city.id == cityId));
   }
