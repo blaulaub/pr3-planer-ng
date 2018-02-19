@@ -15,6 +15,7 @@ import { NewCityComponent } from './new-city/new-city.component';
 import { GoodService } from './services/good.service';
 import { CityService } from './services/city.service';
 import { GameService } from './services/game.service';
+import { GoodsComponent } from './goods/goods.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { GameService } from './services/game.service';
     GamesComponent,
     NewGameComponent,
     GameComponent,
-    NewCityComponent
+    NewCityComponent,
+    GoodsComponent
   ],
   imports: [
     BrowserModule,
