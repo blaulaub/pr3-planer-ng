@@ -18,6 +18,8 @@ import { GoodService } from './services/good.service';
 import { CityService } from './services/city.service';
 import { GameService } from './services/game.service';
 import { ShipTypeService } from './services/ship-type.service';
+import { FacilityService } from './services/facility.service';
+import { FacilitiesComponent } from './facilities/facilities.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { ShipTypeService } from './services/ship-type.service';
     GameComponent,
     NewCityComponent,
     GoodsComponent,
-    ShipTypesComponent
+    ShipTypesComponent,
+    FacilitiesComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,8 @@ import { ShipTypeService } from './services/ship-type.service';
     GoodService,
     CityService,
     GameService,
-    ShipTypeService
+    ShipTypeService,
+    FacilityService
   ],
   bootstrap: [AppComponent]
 })
