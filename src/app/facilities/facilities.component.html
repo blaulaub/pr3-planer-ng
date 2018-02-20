@@ -6,15 +6,23 @@
     <th>wood</th>
     <th>bricks</th>
     <th>cost</th>
-    <th>produces</th>
     <th>consumes</th>
+    <th>produces</th>
   </tr>
   <tr *ngFor="let facility of facilities">
     <td>{{ facility.name }}</td>
     <td>{{ facility.wood }}</td>
     <td>{{ facility.bricks }}</td>
     <td>{{ facility.cost }}</td>
-    <td><i>Todo</i></td>
-    <td><i>Todo</i></td>
+    <td>
+      <p *ngFor="let amountOfGood of facility.consumes">
+        {{amountOfGood.good}}: {{amountOfGood.amount}}
+      </p>
+    </td>
+    <td>
+      <p *ngFor="let amountOfGood of facility.produces">
+        {{amountOfGood.good}}: {{amountOfGood.amount}}
+      </p>
+    </td>
   </tr>
 </table>

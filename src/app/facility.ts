@@ -3,6 +3,12 @@ export class Facility {
   wood: number;
   bricks: number;
   cost: number;
-  produces: { [key: string]: number };
-  consumes: { [key: string]: number };
+  isFarm: boolean;
+  produces: AmountOfGood[];
+  consumes: AmountOfGood[];
+}
+
+export class AmountOfGood {
+  good: string;
+  amount: number;
 }
